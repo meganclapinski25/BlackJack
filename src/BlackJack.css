@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+button{
+    align-items: center;
+}
+
+.dealer-hand,
+.player-hand {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.dealer-hand h2,
+.player-hand h2 {
+  margin-bottom: 0; 
+}
+
+.dealer-cards{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+}
+.player-cards{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+}
+
+.dealer-hand img,
+.player-hand img {
+  display: flex;
+  flex-direction: row; 
+  width: 100px; 
+  height: auto; 
+}
