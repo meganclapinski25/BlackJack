@@ -1,9 +1,83 @@
+body{
+  background-color: green;
+}
 h1{
     text-align: center;
 }
 button{
     align-items: center;
 }
+.deal-button-contain{
+  display: flex;
+  justify-content: center;
+}
+
+.deal-button{
+  display: flex;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #ee2020;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-bottom: 4px solid #ac0a0a;
+  font-weight: 700;
+  color: white;
+  line-height: 26px;
+
+
+}
+.hit-stand-buttons{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+
+}
+.hit-button{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #ee2020;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  line-height: 26px;
+}
+
+.stand-button{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #ee2020;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  line-height: 26px;
+}
+
+.reset-button{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #ee2020;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  line-height: 26px;
+}
+
 
 .dealer-hand,
 .player-hand {
@@ -35,4 +109,8 @@ button{
   flex-direction: row; 
   width: 100px; 
   height: auto; 
+}
+
+.alert{
+  text-align: center;
 }
