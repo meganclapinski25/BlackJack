@@ -1,6 +1,4 @@
 
-
-
 /* From nav- nav-links = Desktop */
 .navbar{
     background-color: grey;
@@ -8,19 +6,29 @@
     width: 100%;
     display: flex;
     
+    
 }
 
 .navbar h1{
     padding-left: 5px;
 }
 
-.nav-links p{
+.nav-links a{
    display: inline-block;
    padding: 10px;
    font-size: medium;
+   text-decoration: none;
    
+
 }
 .nav-links{
     margin-left: auto;
-    
+   
 }
+.nav-links a :hover{
+    background-color: red;
+    
+    
+ }
+
+

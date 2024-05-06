@@ -8,6 +8,8 @@ const BlackJack = () =>{
     const [dealerHand, setDealerHand] = useState([]);
     const [playerHand, setPlayerHand] = useState([]);
     const [gameMessage, setGameMessage] = useState('');
+    const [betAmount, setBetAmount] = useState();
+    const [initialAmount, setInitialAmount] = useState(500);
     
     const cardValues = {
         '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10,
@@ -119,6 +121,12 @@ const BlackJack = () =>{
                 setGameMessage('Tie!')
             }
         };
+
+        const bet = () =>{
+            if(betAmount > 0 && betAmount <= initialAmount){
+                setInitialAmount(initialAmount - betAmount);
+            }
+        }
         
 
          useEffect(() => {
@@ -134,7 +142,9 @@ const BlackJack = () =>{
          },[dealerHand, playerHand]);
             
         
-          
+         const handleBetChange = (e) => {
+            setBetAmount(parseInt(e.target.value));
+        };
 
         useEffect(() => {
             setDeck(createDeck());
@@ -143,7 +153,16 @@ const BlackJack = () =>{
 
             <div>
                     <Header/>   
-                <div >
+                <div>
+                    <div className='bets'>
+                        <p>Amount: {initialAmount}</p>
+                        <form className='bet-amount'>
+                            <p>Bet Amount:</p>
+                            <input type='number' value={betAmount} handleBetChange></input>
+                            <button> Bet </button>
+                        </form>
+                        
+                    </div>
                         <h1>Wecome to BlackJack</h1>
                         <div className='deal-button-contain'>
                         <button className='deal-button' onClick={dealCards}>Deal</button>
