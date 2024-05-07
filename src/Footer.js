@@ -9,7 +9,7 @@ function Footer(){
             <h3>Copyright Megan Clapinski</h3>
             <div className="nav-links-footer">
                     <a><Link to="/">Home</Link></a>
-                    <a><Link to="/blackjack">Contact</Link></a>
+                    <a><Link to="/contact">Contact</Link></a>
                     <a><Link to="/blackjack">BlackJack</Link></a>
                     
              </div>

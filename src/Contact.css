@@ -1,0 +1,39 @@
+.contact{
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    width: auto;
+}
+
+.contact li{
+    font-weight: bolder;
+    font-size: large;
+}
+.hot-links{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.github svg,
+.linkedin svg {
+        font-size: 3em; 
+    }
+
+
+@media screen and (max-width: 320px){
+    .contact {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .contact p{
+        text-align: center;
+        font-size: smaller;
+        text-decoration: underline;
+    }
+    .hot-links{
+        display: flex;
+    
+    }
+}
