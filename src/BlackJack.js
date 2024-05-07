@@ -67,6 +67,7 @@ const BlackJack = () =>{
             setPlayerHand([]);
             setDeck(createDeck());
             setGameMessage( " ");
+            setInitialAmount(500);
             
         }
         
@@ -109,20 +110,25 @@ const BlackJack = () =>{
                 console.log(dealerScore)
                 console.log(playerScore)
                 setGameMessage('Dealer Wins!')
+                setInitialAmount( initialAmount );
             } else if (playerScore > dealerScore) {
                 console.log("Player wins");
                 console.log(dealerScore)
                 console.log(playerScore)
                 setGameMessage('Player Wins!')
+                setInitialAmount( 2  * initialAmount);
             } else {
                 console.log("You Tied");
                 console.log(dealerScore)
                 console.log(playerScore)
                 setGameMessage('Tie!')
+                setInitialAmount(initialAmount);
+                
             }
         };
 
         const bet = () =>{
+        
             if(betAmount > 0 && betAmount <= initialAmount){
                 setInitialAmount(initialAmount - betAmount);
             }
@@ -134,17 +140,16 @@ const BlackJack = () =>{
             const dealerScore = score(dealerHand);
             if (playerScore > 21) {
                 setGameMessage('Player Busts Dealer Wins!');
+                setInitialAmount(initialAmount)
                 
             } if (dealerScore > 21){
                 setGameMessage ('Dealer Busts Player Wins!')
-                
+                setInitialAmount(initialAmount * 2 )
             } 
          },[dealerHand, playerHand]);
             
         
-         const handleBetChange = (e) => {
-            setBetAmount(parseInt(e.target.value));
-        };
+         
 
         useEffect(() => {
             setDeck(createDeck());
@@ -157,9 +162,12 @@ const BlackJack = () =>{
                     <div className='bets'>
                         <p>Amount: {initialAmount}</p>
                         <form className='bet-amount'>
-                            <p>Bet Amount:</p>
-                            <input type='number' value={betAmount} handleBetChange></input>
-                            <button> Bet </button>
+                            <p className='temp'>Bet Amount:</p>
+                            <div className='bet-input'>
+                                <input type='number' value={betAmount} onChange={(e) =>setBetAmount(e.target.value)}></input>
+                                <button className='bet-button' onClick={bet}> Bet </button>
+                            </div>
+                            
                         </form>
                         
                     </div>
