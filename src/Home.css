@@ -1,5 +1,5 @@
 .body{
-    background-color: azure;
+    background-color: rgb(191, 42, 42);
 }
 
 .container{
@@ -19,5 +19,4 @@ li{
 .image img {
     max-width: 100%;
     padding: 10px;
-    
 }

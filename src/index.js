@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Blackjack from './BlackJack';
+import Contact from './Contact';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/home" element={<Home />} />
         <Route path="/blackjack" element={<Blackjack />} />
+        <Route path='/contact' element={<Contact />}/>
    </Routes>
 </Router>
 );

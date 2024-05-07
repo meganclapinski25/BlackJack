@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './BlackJack.css'
 import Alert from 'react-bootstrap/Alert';
 import Header from './Header';
+import Footer from './Footer';
 
 const BlackJack = () =>{
     const [deck, setDeck] = useState([]);
@@ -204,6 +205,7 @@ const BlackJack = () =>{
                         </div>
                         
                 </div>
+                <Footer />
             </div>
         )
 };

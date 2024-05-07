@@ -1,7 +1,7 @@
 
 /* From nav- nav-links = Desktop */
 .navbar{
-    background-color: grey;
+    background-color: rgb(191, 42, 42);
     height: auto;
     width: 100%;
     display: flex;
@@ -16,8 +16,10 @@
 .nav-links a{
    display: inline-block;
    padding: 10px;
-   font-size: medium;
+   font-size: large;
+   font-weight: bolder;
    text-decoration: none;
+   color: black;
    
 
 }
@@ -26,9 +28,24 @@
    
 }
 .nav-links a :hover{
-    background-color: red;
+    background-color: green
     
     
  }
+ @media screen and (max-width: 450px){
+    
+    .navbar{
+        background-color: rgb(191, 42, 42);
+        justify-content: center;
+    }
+    
+    
+    .nav-links{
+        display: none;
+        
+    
+    }
+  
+  }
 
 
