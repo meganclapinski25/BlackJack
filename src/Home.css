@@ -1,5 +1,6 @@
 .body{
     background-color: rgb(191, 42, 42);
+    
 }
 
 .container{
@@ -10,8 +11,18 @@
     flex: 1;
     
 }
+h2{
+    color: white;
+    
+}
+p{
+    color: white;
+    font-weight: bolder;
+}
 li{
     list-style: none;
+    color: white;
+    font-weight: bolder;
 }
 .image{
     flex: 1;
