@@ -31,3 +31,9 @@ li{
     max-width: 100%;
     padding: 10px;
 }
+@media screen and (max-width: 320px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
