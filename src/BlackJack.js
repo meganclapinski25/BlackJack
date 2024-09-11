@@ -158,7 +158,7 @@ const BlackJack = () =>{
         return(
 
             <div>
-                    <Header/>   
+                   
                 <div>
                     <div className='bets'>
                         <p>Amount: {initialAmount}</p>

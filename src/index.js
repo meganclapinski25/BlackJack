@@ -14,10 +14,8 @@ const root = createRoot(rootElement);
 root.render(
   <Router>
     <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/blackjack" element={<Blackjack />} />
-        <Route path='/contact' element={<Contact />}/>
+        <Route path="/" element={<Blackjack />} />
+        
    </Routes>
 </Router>
 );

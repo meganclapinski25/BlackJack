@@ -1,5 +1,5 @@
 body{
-  background-color: green;
+  background-color: #e1cddb;
 }
 h1{
     text-align: center;
@@ -18,11 +18,11 @@ button{
   outline: 0;
   border: 0;
   cursor: pointer;
-  background-color: #ee2020;
+  background-color: black;
   border-radius: 4px;
   padding: 8px 16px;
   font-size: 16px;
-  border-bottom: 4px solid #ac0a0a;
+  border-bottom: 4px solid #e1cddb;
   font-weight: 700;
   color: white;
   line-height: 26px;
@@ -134,9 +134,12 @@ button{
   display: flex;
   padding: 10px;
 }
-.bet-input{
+.bet-input {
   align-self: center;
-  padding-left: 3px;
+  padding-left: 5px;
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 4px;
+  padding: 8px;
 }
 .bet-button{
   padding-left: 5px;
